@@ -388,3 +388,27 @@ html {
     color: #bfa980;
   }
 }
+
+@media (max-width: 768px) {
+  .top-container,
+  .middle-container,
+  .section {
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .title-text h1 {
+    font-size: 2rem;
+  }
+
+  .title-text h2 {
+    font-size: 1.2rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Add more responsive tweaks here based on your layout */
+}
