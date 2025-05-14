@@ -1,5 +1,9 @@
 /* General Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* Base Styles */
 body {
@@ -196,7 +200,7 @@ h2 {
   border-color: rgba(0, 0, 0, 0.1);
 }
 
-/* --- Blog Page Specific Styles --- */
+/* Blog Page Specific Styles */
 .blog-title {
   font-family: 'Merriweather', serif;
   font-size: 2.5rem;
@@ -246,7 +250,7 @@ h2 {
   font-weight: 600;
 }
 
-/* --- Social Icons --- */
+/* Social Icons */
 .social-icons {
   display: flex;
   justify-content: space-between;
@@ -294,7 +298,7 @@ a:hover {
   text-decoration: #25d366;
 }
 
-/* --- Project Page Additions --- */
+/* Project Page Additions */
 .section-title {
   font-family: 'Merriweather', serif;
   margin-top: 60px;
@@ -315,15 +319,7 @@ a:hover {
   transform: translateY(-5px);
 }
 
-/* --- Added: Responsive Typography --- */
-@media (max-width: 768px) {
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.5rem; }
-  .title-text h1 { font-size: 2.2rem; }
-  .title-text h2 { font-size: 1.2rem; }
-}
-
-/* --- Added: Buttons --- */
+/* Buttons */
 .btn {
   padding: 0.6rem 1.2rem;
   background-color: #d88c60;
@@ -339,7 +335,7 @@ a:hover {
   background-color: #c3784f;
 }
 
-/* --- Added: Scroll to Top Button --- */
+/* Scroll to Top Button */
 #scrollToTopBtn {
   position: fixed;
   bottom: 30px;
@@ -363,12 +359,12 @@ a:hover {
   background-color: #b0825e;
 }
 
-/* --- Added: Smooth Scrolling --- */
+/* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* --- Added: Dark Mode Support --- */
+/* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #2b2b2b;
@@ -389,7 +385,13 @@ html {
   }
 }
 
+/* Responsive Typography & Layout */
 @media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  .title-text h1 { font-size: 2.2rem; }
+  .title-text h2 { font-size: 1.2rem; }
+
   .top-container,
   .middle-container,
   .section {
@@ -397,18 +399,13 @@ html {
     text-align: center;
   }
 
-  .title-text h1 {
-    font-size: 2rem;
-  }
-
-  .title-text h2 {
-    font-size: 1.2rem;
+  .profile-row {
+    flex-direction: column;
+    align-items: center;
   }
 
   img {
     max-width: 100%;
     height: auto;
   }
-
-  /* Add more responsive tweaks here based on your layout */
 }
