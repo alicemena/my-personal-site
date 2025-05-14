@@ -11,9 +11,6 @@ body {
   background-color: #f5f0eb;
   color: #2d2d2d;
   line-height: 1.7;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
 }
 
 /* Headings */
@@ -23,12 +20,12 @@ h1, h2 {
 }
 
 h1 {
-  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: clamp(1.5rem, 4vw, 1.8rem);
+  font-size: 1.8rem;
   color: #5b5b5b;
 }
 
@@ -41,14 +38,14 @@ h2 {
 }
 
 .title-text h1 {
-  font-size: clamp(2rem, 6vw, 3rem);
+  font-size: 3rem;
   font-family: 'Sacramento', cursive;
   margin-bottom: 1rem;
   color: #2d2d2d;
 }
 
 .title-text h2 {
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #6c757d;
@@ -90,14 +87,11 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
-  justify-content: center;
 }
 
 .mena-profile-img {
-  width: clamp(140px, 30vw, 180px);
+  width: 180px;
   object-fit: cover;
-  max-width: 100%;
-  height: auto;
 }
 
 /* Icons & Imagery */
@@ -301,7 +295,7 @@ h2 {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: #25d366;
 }
 
 /* Project Page Additions */
@@ -370,27 +364,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #2b2b2b;
-    color: #f0f0f0;
-  }
-
-  .section, .blog-post, .contact-me, .custom-navbar, .bottom-container {
-    background-color: #3c3c3c;
-    color: #f0f0f0;
-  }
-
-  .nav-link, .footer-link {
-    color: #f0f0f0;
-  }
-
-  .nav-link:hover, .footer-link:hover {
-    color: #bfa980;
-  }
-}
-
 /* Responsive Typography & Layout */
 @media (max-width: 768px) {
   h1 { font-size: 2rem; }
@@ -413,43 +386,5 @@ html {
   img {
     max-width: 100%;
     height: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .section,
-  .blog-post,
-  .contact-me,
-  .top-container,
-  .middle-container {
-    padding: 1rem;
-    margin: 0.5rem;
-  }
-
-  .blog-post {
-    padding: 1rem;
-    font-size: 0.95rem;
-  }
-
-  .blog-post h3 {
-    font-size: 1.3rem;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-  }
-
-  .custom-navbar .navbar-brand {
-    font-size: 1.2rem;
-  }
-
-  .custom-navbar .nav-link {
-    font-size: 0.95rem;
-  }
-
-  .social-icons {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
   }
 }
