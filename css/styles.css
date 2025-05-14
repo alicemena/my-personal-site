@@ -1,0 +1,390 @@
+/* General Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Base Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f0eb;
+  color: #2d2d2d;
+  line-height: 1.7;
+}
+
+/* Headings */
+h1, h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #5b5b5b;
+}
+
+/* Hero Section */
+.top-container {
+  background-color: #f5f0eb;
+  color: #2d2d2d;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.title-text h1 {
+  font-size: 3rem;
+  font-family: 'Sacramento', cursive;
+  margin-bottom: 1rem;
+  color: #2d2d2d;
+}
+
+.title-text h2 {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #6c757d;
+}
+
+/* Highlight */
+.pro {
+  font-weight: bold;
+  color: #d88c60;
+}
+
+/* Sections */
+.middle-container {
+  padding: 3rem 2rem;
+}
+
+.section {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Section Titles */
+.section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  color: #3e3e3e;
+  border-bottom: 2px solid #bfa980;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Profile Image */
+.profile-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mena-profile-img {
+  width: 180px;
+  object-fit: cover;
+}
+
+/* Icons & Imagery */
+.education-img, .code-img, .repair-img, .work-img, .contact-us-img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+/* Skills & Work */
+.skill-row p {
+  margin-bottom: 0.5rem;
+}
+
+.work-experience-row a {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #85603f;
+  text-decoration: none;
+}
+
+.work-experience-row a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-me {
+  background-color: #eee5dc;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.contact-me h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.contact-me a {
+  display: block;
+  margin: 0.5rem 0;
+  color: #85603f;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-me a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.bottom-container {
+  background-color: #d4c2ad;
+  padding: 2rem;
+  text-align: center;
+  color: #2d2d2d;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  color: #2d2d2d;
+  font-weight: 500;
+  text-decoration: underline;
+  margin: 0 12px;
+}
+
+.footer-link img.linkedin-img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.footer-link:hover {
+  color: #5b5b5b;
+}
+
+.bottom-container .copyright {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #5f5f5f;
+}
+
+/* Navbar */
+.custom-navbar {
+  background-color: #f5f0eb;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.custom-navbar .navbar-brand {
+  color: #2d2d2d;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+}
+
+.custom-navbar .nav-link {
+  color: #5c5c5c;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #b0825e;
+}
+
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* --- Blog Page Specific Styles --- */
+.blog-title {
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #3e3e3e;
+}
+
+.blog-intro {
+  font-family: 'Merriweather', serif;
+  font-size: 1.1rem;
+  color: #5b5b5b;
+  margin-bottom: 2rem;
+}
+
+.blog-post {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 5px solid #d88c60;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.blog-post h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #2d2d2d;
+}
+
+.blog-post small {
+  display: block;
+  margin-bottom: 1rem;
+  color: #999;
+}
+
+.blog-post p {
+  font-size: 1rem;
+  color: #3e3e3e;
+  line-height: 1.6;
+}
+
+/* Highlight active nav */
+.nav-link.active {
+  color: red !important;
+  font-weight: 600;
+}
+
+/* --- Social Icons --- */
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f5f0eb;
+  padding: 1rem 2rem;
+  border-top: 1px solid #d8cfc4;
+  border-bottom: 1px solid #d8cfc4;
+}
+
+.social-icons .left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.05);
+}
+
+.icon-instagram { color: #e1306c; }
+.icon-facebook { color: #1da1f2; }
+.icon-linkedin { color: #0077b5; }
+.icon-whatsapp { color: #25d366; }
+.icon-email { color: #d44638; }
+
+.social-icons .right {
+  font-size: 0.95rem;
+  color: #5f5f5f;
+  text-align: right;
+}
+
+a:hover {
+  text-decoration: #25d366;
+}
+
+/* --- Project Page Additions --- */
+.section-title {
+  font-family: 'Merriweather', serif;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+  color: #3e3e3e;
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* --- Added: Responsive Typography --- */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  .title-text h1 { font-size: 2.2rem; }
+  .title-text h2 { font-size: 1.2rem; }
+}
+
+/* --- Added: Buttons --- */
+.btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #d88c60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c3784f;
+}
+
+/* --- Added: Scroll to Top Button --- */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #85603f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #b0825e;
+}
+
+/* --- Added: Smooth Scrolling --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Added: Dark Mode Support --- */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+  }
+
+  .section, .blog-post, .contact-me, .custom-navbar, .bottom-container {
+    background-color: #3c3c3c;
+    color: #f0f0f0;
+  }
+
+  .nav-link, .footer-link {
+    color: #f0f0f0;
+  }
+
+  .nav-link:hover, .footer-link:hover {
+    color: #bfa980;
+  }
+}
