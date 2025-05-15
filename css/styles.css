@@ -13,6 +13,10 @@ body {
   line-height: 1.7;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 /* Headings */
 h1, h2 {
   font-family: 'Merriweather', serif;
@@ -200,7 +204,7 @@ h2 {
   border-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Blog Page Specific Styles */
+/* Blog Page */
 .blog-title {
   font-family: 'Merriweather', serif;
   font-size: 2.5rem;
@@ -244,7 +248,7 @@ h2 {
   line-height: 1.6;
 }
 
-/* Highlight active nav */
+/* Active Nav Link */
 .nav-link.active {
   color: red !important;
   font-weight: 600;
@@ -298,7 +302,7 @@ a:hover {
   text-decoration: #25d366;
 }
 
-/* Project Page Additions */
+/* Project Page */
 .section-title {
   font-family: 'Merriweather', serif;
   margin-top: 60px;
@@ -364,7 +368,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Responsive Typography & Layout */
+/* Responsive Layout */
 @media (max-width: 768px) {
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
@@ -387,4 +391,85 @@ html {
     max-width: 100%;
     height: auto;
   }
+}
+
+/* PIN Modal Styles */
+.pin-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.pin-modal-content {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 350px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.pin-modal-content h3 {
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.pin-modal-content input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pin-modal-content input[type="password"]:focus {
+  outline: none;
+  border-color: #0056b3;
+}
+
+.pin-modal-content button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+.pin-modal-content button:hover {
+  background-color: #0056b3;
+}
+
+.pin-modal-content p {
+  margin-top: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.pin-modal-content .contact-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pin-modal-content .contact-link:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }
